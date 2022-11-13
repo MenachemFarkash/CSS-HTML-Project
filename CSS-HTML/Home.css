@@ -1,0 +1,117 @@
+.ProductContainer {
+
+
+    display: grid;
+    grid-column: 5;
+    grid-row: 420px 420px 420px;
+    margin-top: 160px;
+    text-align: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 60px;
+    width: 100%;
+
+}
+
+.Product1 {
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end:2 ;
+        width: fit-content;
+        height: fit-content;
+        
+
+}
+.Product2 {
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: fit-content;
+        height: fit-content;
+
+}
+.Product3 {
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: fit-content;
+        height: fit-content;
+
+}
+.Product4 {
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: fit-content;
+        height: fit-content;
+
+}
+
+.Product5 {
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.Product6 {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+
+.Product1P{
+
+    height: 40%;
+    width: 40%;
+    float: right;
+}
+.Product2P{
+
+    height: 40%;
+    width: 40%;
+    float: left;
+
+}
+.Product3P{
+
+    height: 40%;
+    width: 40%;
+    float: right;
+
+}
+.Product4P{
+
+    float: left;
+    height: 40%;
+    width: 40%;
+
+}
+
+.Product1P,.Product2P,.Product3P,.Product4P{
+
+    border: solid #9F8772;
+    border-radius: 7px;
+
+
+}
+
+

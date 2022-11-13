@@ -1,0 +1,124 @@
+.PlaceHolder{
+
+    margin-top: 160px;
+    margin-bottom: 60px;
+
+}
+
+.ProductsContainer{
+    
+    grid-template-columns: 318px 318px 142px 142px 318px 318px ;
+    grid-template-rows: 417px 477px 322px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 15px;
+    column-gap: 15px;
+    width: 80%;
+    margin-top: 0px;
+
+
+}
+
+.TopBanner{
+
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: fit-content;
+    
+}
+
+.RightMidBanner{
+
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-right: 0px;
+    width: 50% ;
+
+
+
+}
+
+.LeftMidBanner{
+
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    float: right;
+    width: fit-content;
+
+}
+
+.BottomRightBanner{
+
+    margin-left: 0px;
+    margin-right: auto;
+    width: fit-content;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+
+}
+
+.BottomLeftBanner{
+
+    margin-left: auto;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    width: fit-content;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+
+}
+
+.BottomMidBanner{
+
+    margin-left: 0px;
+    margin-right: 0px;
+    width: fit-content;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    text-align: center;
+
+}
+
+.WomenSkirtsBanner{
+
+    border: 2px solid rgb(200, 219, 190);
+
+}
+.WomenJacketsBanner{
+
+    border: 2px solid rgb(200, 219, 190);
+
+}
+
+.WomenShirtBanner{
+
+    width: 100%;
+    border: 2px solid rgb(200, 219, 190);
+    margin: 0px;
+
+}
+
+.WomenLeftShirtBanner{
+
+    margin-left: auto;
+    border: 2px solid rgb(200, 219, 190);
+
+}
+
+.WomenShoesBanner{
+
+    margin-left: 0px;
+    border: 2px solid rgb(200, 219, 190);
+
+}

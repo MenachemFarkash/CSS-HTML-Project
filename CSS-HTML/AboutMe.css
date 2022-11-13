@@ -1,0 +1,78 @@
+table{
+
+    margin-top: 160px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.ProfilePicture {
+    border-radius: 50%;
+    width: 40%;
+}
+
+.InformationCell{
+
+    width: 50%;
+    
+
+}
+.InformationLorem{
+
+    font-size: x-large;
+    text-align: left;
+    padding-right: 10%;
+
+}
+
+.BottomInformation{
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    
+
+}
+
+.more{
+
+    text-align: left;
+    font-size: x-large;
+    border-left: 6px solid #513f2b;
+    padding-left: 2%;
+
+
+}
+
+h1, .moreHeading{
+
+    color: #513f2b;
+    text-decoration: underline;
+
+}
+
+.moreHeading{
+
+    text-align: left;
+    color: #513f2b;
+
+}
+
+.NameHeading{
+
+    text-decoration: underline;
+    color: #513f2b;
+    font-family: 'Bukhari Script', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 15px;
+    height: 100%;
+
+}
+
+.blockqutes{
+
+    background-color: #cdbdaa;
+    border-radius: 15px;
+
+}

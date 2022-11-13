@@ -1,0 +1,106 @@
+/* Product grid */
+.ProductContainer {
+
+
+    display: grid;
+    grid-column: 3;
+    grid-row: 420px 10px 420px 10px;
+    margin-top: 160px;
+    text-align: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 60px;
+
+}
+
+
+/* Products grid placment */
+.Product1 {
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end:2 ;
+        width: fit-content;
+        height: fit-content;
+        
+
+}
+.Product2 {
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: fit-content;
+        height: fit-content;
+
+}
+.Product3 {
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: fit-content;
+        height: fit-content;
+
+}
+.Product4 {
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: fit-content;
+        height: fit-content;
+
+}
+
+/* Pricing Button */
+.Product1Price, .Product2Price, .Product3Price, .Product4Price{
+
+    width: 41%;
+    height: max-content;
+    background-color: #C8DBBE;
+    border: 2px solid #9F8772;
+    border-radius: 7px;
+
+}
+
+/* Price buttons placement and size */
+.Product1Price, .Product3Price{
+
+    float: right;
+}
+
+.Product2Price, .Product4Price{
+
+    float: left;
+
+}
+
+.Product1P, .Product3P{
+
+    height: 40%;
+    width: 40%;
+    float: right;
+}
+.Product2P, .Product4P{
+
+    height: 40%;
+    width: 40%;
+    float: left;
+
+}
+
+/* Pricing button style */
+.Product1P,.Product2P,.Product3P,.Product4P{
+
+    border: solid #9F8772;
+    border-radius: 7px;
+
+
+}
+
+

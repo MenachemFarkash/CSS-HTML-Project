@@ -1,0 +1,28 @@
+.MainTable{
+    width: 100%;
+    padding-top: 160px;
+}
+
+.RightCell {  
+    width: 50%;
+}
+
+.LeftCell {
+    width: 50%;
+}
+
+.men, .women{
+    box-shadow: 13px 13px 8px #665A48;
+    border-radius: 7px;
+    border: 4px solid #C8DBBE;   
+}
+
+.men:hover{
+    scale: 1.02;
+}
+
+.women:hover{
+    scale: 1.02;
+}
+
+
