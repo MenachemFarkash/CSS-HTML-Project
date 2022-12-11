@@ -1,0 +1,243 @@
+:root {
+    background-image: url(./components/images/Moviesbackground.png);
+}
+/* ! =====================Movie List CSS=========================== */
+
+#delete {
+    width: 6vw;
+    height: 4vh;
+    background-color: #ac1818;
+    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#delete:hover {
+    background-color: #871111;
+    cursor: pointer;
+}
+
+#main {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 83vw;
+
+    top: 11vh;
+    left: 16vw;
+    background-color: #e37286dc;
+    border-radius: 7px;
+}
+#movieList {
+    padding: 1vw;
+    height: 81vh;
+}
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    height: fit-content;
+}
+#tableHead {
+    background-color: #881b2fdc;
+    padding: 1%;
+    margin-top: 10px;
+    height: 6vh;
+    font-size: 1.5vw;
+}
+#movieCellEven {
+    height: 13vh;
+}
+#movieCellOdd {
+    height: 13vh;
+    background-color: #da445fdc;
+    border-radius: 7px;
+    font-size: 3vh;
+}
+#cell {
+    text-align: center;
+    font-weight: 600;
+}
+#likeCell {
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+#scroll {
+    height: 81vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(227, 172, 227) rgb(149, 134, 134);
+    box-shadow: 0px 0px 15px 7px firebrick;
+}
+
+/* ! =====================Side Bar CSS=========================== */
+
+#siderMain {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 13.5vw;
+    height: 82vh;
+    background-color: #9d6381;
+    top: 10vh;
+    padding: 1.5vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+#buttonContainer {
+    margin-top: 1vh;
+}
+#sideButton {
+    width: 100%;
+    height: 8vh;
+    margin-top: 3vh;
+    border: none;
+    font-size: 3vh;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ! =====================Nav Bar CSS=========================== */
+
+#navBar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #612940;
+    height: 10vh;
+    width: 100%;
+    padding-right: 20px;
+    top: 0;
+}
+#heading {
+    margin-left: 45px;
+    margin-top: 0.7vh;
+    font-size: 6vh;
+}
+#heading:hover {
+    cursor: pointer;
+}
+#input {
+    width: 2vw;
+    height: 4vh;
+    text-align: center;
+    margin-right: 2vw;
+    margin-top: 1.5vh;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+#button {
+    height: 4vh;
+    width: 6vw;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1.5vh;
+    font-size: 2vh;
+}
+#center {
+    margin-top: 15px;
+}
+#label {
+    font-size: 35px;
+}
+#addMovieMainButton {
+    width: 8vw;
+    height: 3vh;
+    margin-top: 2.5vh;
+}
+#addMovieLink {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding: 1vh;
+}
+
+/* ! =====================Add Movie CSS=========================== */
+
+#formContainer {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 15vh;
+    left: 25vw;
+    height: 80vh;
+    width: 50vw;
+    z-index: 2;
+    box-shadow: 0px 0px 50px 7px rgb(184, 137, 188);
+    border-radius: 2vw;
+}
+#backgroundBlocker {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+#addMovieForm {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#movieNameInput {
+    color: rgb(0, 0, 0);
+    width: 30vw;
+    height: 5vh;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#formHeading {
+    color: white;
+    font-size: 3vw;
+}
+#chooseGenreHeading {
+    color: white;
+    font-size: 2vw;
+}
+#genreSelector {
+    width: 25vw;
+    font-size: larger;
+    text-align: center;
+}
+#ratingInput {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 2.5vh;
+    margin-left: 2vw;
+}
+#ratingInputLabel {
+    color: white;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+}
+#addMovieButton {
+    position: fixed;
+    top: 80vh;
+    margin-top: 2vh;
+    width: 10vw;
+    height: 2.5vw;
+    font-size: 2.5vh;
+}
+
+/* ! =====================Footer CSS=========================== */
+
+#footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 96vh;
+    width: 100vw;
+    height: 4vh;
+    background-color: #612940;
+
+    padding: 1vh;
+}
+#pageButtons {
+    width: 2vw;
+    height: 2vh;
+}

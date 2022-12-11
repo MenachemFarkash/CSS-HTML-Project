@@ -1,0 +1,7 @@
+:root {
+    background-image: url(./components/images/Moviesbackground.png);
+}
+
+#button:hover {
+    background-color: black;
+}
