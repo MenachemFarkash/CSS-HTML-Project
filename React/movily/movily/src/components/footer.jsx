@@ -6,7 +6,7 @@ class Footer extends Component {
             <div id="footer">
                 <div id="paginationButtons">
                     {this.props.pages.map((val, index) => (
-                        <button id="pageButtons" key={index}>
+                        <button onClick={(event) => this.props.pageSwich(event)} id="pageButtons" key={index}>
                             {val}
                         </button>
                     ))}

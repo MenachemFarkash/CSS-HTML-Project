@@ -195,7 +195,19 @@ class MovilyMain extends Component {
         newMovie: {},
         mainPageOn: true,
         max: 0,
-        // ? Pagination=============
+        buttonBadges: [
+            { action: 0 },
+            { comedy: 0 },
+            { drama: 0 },
+            { fantasy: 0 },
+            { horror: 0 },
+            { crime: 0 },
+            { biography: 0 },
+            { scifi: 0 },
+            { adventure: 0 },
+            { animation: 0 },
+            { thriller: 0 },
+        ],
     };
     style = {};
     render() {
@@ -203,6 +215,7 @@ class MovilyMain extends Component {
             if (this.state.mainPageOn === true) {
                 this.chooseWhatToPrint();
             }
+            this.updateButtonBagdes();
         }
         return (
             <div style={this.style}>
@@ -211,6 +224,7 @@ class MovilyMain extends Component {
                     showList={this.showMovies}
                     resetShowenList={this.resetShowenList}
                     movies={this.state.movies}
+                    buttonBadges={this.state.buttonBadges}
                 />
                 <Routes>
                     <Route
@@ -236,10 +250,11 @@ class MovilyMain extends Component {
                         }
                     />
                 </Routes>
-                <Footer pages={this.state.pages}></Footer>
+                <Footer pages={this.state.pages} pageSwich={this.pageSwich}></Footer>
             </div>
         );
     }
+
     showMovies = (genre) => {
         switch (genre) {
             case 'Action':
@@ -333,7 +348,7 @@ class MovilyMain extends Component {
         this.setState({ mainPageOn: false });
     };
 
-    handleDelete = (id, genre) => {
+    handleDelete = (id) => {
         const notDeleted = this.state.movies.filter((movie) => movie.id !== id);
         const showenMovies = this.state.showenMovies.filter((movie) => movie.id !== id);
         this.setState({ movies: notDeleted });
@@ -350,9 +365,7 @@ class MovilyMain extends Component {
                 this.state.pages.push(i);
                 this.setState({ pages: this.state.pages });
             }
-            console.table(this.state.pages);
         }
-        console.table(this.state.pages);
     };
     handleSubmit = (event, values) => {
         event.preventDefault();
@@ -364,6 +377,30 @@ class MovilyMain extends Component {
         this.state.movies.push(newMovie);
         this.setState({ movies: this.state.movies });
         this.state.idAddMovie++;
+    };
+    updateButtonBagdes = () => {
+        const action = this.state.movies.filter((movie) => movie.genre == 'Action');
+        this.state.buttonBadges[0] = action.length;
+        const comedy = this.state.movies.filter((movie) => movie.genre == 'Comedy');
+        this.state.buttonBadges[1] = comedy.length;
+        const drama = this.state.movies.filter((movie) => movie.genre == 'Drama');
+        this.state.buttonBadges[2] = drama.length;
+        const fantasy = this.state.movies.filter((movie) => movie.genre == 'Fantasy');
+        this.state.buttonBadges[3] = fantasy.length;
+        const horror = this.state.movies.filter((movie) => movie.genre == 'Horror');
+        this.state.buttonBadges[4] = horror.length;
+        const crime = this.state.movies.filter((movie) => movie.genre == 'Crime');
+        this.state.buttonBadges[5] = crime.length;
+        const biography = this.state.movies.filter((movie) => movie.genre == 'Biography');
+        this.state.buttonBadges[6] = biography.length;
+        const scifi = this.state.movies.filter((movie) => movie.genre == 'Sci-Fi');
+        this.state.buttonBadges[7] = scifi.length;
+        const adventure = this.state.movies.filter((movie) => movie.genre == 'Adventure');
+        this.state.buttonBadges[8] = adventure.length;
+        const animation = this.state.movies.filter((movie) => movie.genre == 'Animation');
+        this.state.buttonBadges[9] = animation.length;
+        const thriller = this.state.movies.filter((movie) => movie.genre == 'Thriller');
+        this.state.buttonBadges[10] = thriller.length;
     };
 }
 export default MovilyMain;

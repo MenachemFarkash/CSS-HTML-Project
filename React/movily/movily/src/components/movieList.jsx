@@ -10,7 +10,6 @@ class MovieList extends Component {
                         <table id="table">
                             <thead id="tableHead">
                                 <tr id="tableHead">
-                                    <th>Image</th>
                                     <th>Id</th>
                                     <th>Name</th>
                                     <th>Genre</th>
@@ -22,9 +21,6 @@ class MovieList extends Component {
                             <tbody>
                                 {this.props.showenMovies.map((list, index) => (
                                     <tr id="movieCellOdd" key={index}>
-                                        <td id="cell">
-                                            <img src={list.image}></img>
-                                        </td>
                                         <td id="cell">{list.id}</td>
                                         <td id="cell">{list.name}</td>
                                         <td id="cell">{list.genre}</td>

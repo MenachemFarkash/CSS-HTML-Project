@@ -6,37 +6,37 @@ class SideBar extends Component {
             <div id="siderMain">
                 <div id="buttonContainer">
                     <button id="sideButton" onClick={() => this.props.showList('Action')}>
-                        Action<span id="innerButton">10</span>
+                        Action<span id="innerButton">{this.props.buttonBadges[0]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Comedy')}>
-                        Comedy<span id="innerButton">10</span>
+                        Comedy<span id="innerButton">{this.props.buttonBadges[1]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Drama')}>
-                        Drama<span id="innerButton">10</span>
+                        Drama<span id="innerButton">{this.props.buttonBadges[2]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Fantasy')}>
-                        Fantasy<span id="innerButton">10</span>
+                        Fantasy<span id="innerButton">{this.props.buttonBadges[3]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Horror')}>
-                        Horror<span id="innerButton">10</span>
+                        Horror<span id="innerButton">{this.props.buttonBadges[4]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Crime')}>
-                        Crime<span id="innerButton">10</span>
+                        Crime<span id="innerButton">{this.props.buttonBadges[5]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Biography')}>
-                        Biography<span id="innerButton">10</span>
+                        Biography<span id="innerButton">{this.props.buttonBadges[6]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Sci-Fi')}>
-                        Sci-Fi<span id="innerButton">10</span>
+                        Sci-Fi<span id="innerButton">{this.props.buttonBadges[7]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Adventure')}>
-                        Adventure<span id="innerButton">10</span>
+                        Adventure<span id="innerButton">{this.props.buttonBadges[8]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Animation')}>
-                        Animation<span id="innerButton">10</span>
+                        Animation<span id="innerButton">{this.props.buttonBadges[9]}</span>
                     </button>
                     <button id="sideButton" onClick={() => this.props.showList('Thriller')}>
-                        Thriller<span id="innerButton">10</span>
+                        Thriller<span id="innerButton">{this.props.buttonBadges[10]}</span>
                     </button>
                 </div>
             </div>
