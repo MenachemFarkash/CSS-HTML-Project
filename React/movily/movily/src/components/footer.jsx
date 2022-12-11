@@ -7,7 +7,7 @@ class Footer extends Component {
                 <div id="paginationButtons">
                     {this.props.pages.map((val, index) => (
                         <button id="pageButtons" key={index}>
-                            {val.number}
+                            {val}
                         </button>
                     ))}
                 </div>

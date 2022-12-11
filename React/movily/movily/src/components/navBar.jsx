@@ -12,14 +12,19 @@ class NavBar extends Component {
                     </h1>
                     <div id="center">
                         <button id="addMovieMainButton">
-                            <a id="addMovieLink" href="/addMovie">
+                            <Link id="addMovieLink" to="/addMovie">
                                 Add Movie
-                            </a>
+                            </Link>
                         </button>
                     </div>
                     <div id="center">
                         <label id="label">Number Of Items: </label>
-                        <input id="input" type={'text'} placeholder={'1'}></input>
+                        <input
+                            onChange={(ev) => this.props.pagesNumber(ev)}
+                            id="input"
+                            type={'text'}
+                            placeholder={'1'}
+                        ></input>
                     </div>
                 </nav>
             </div>

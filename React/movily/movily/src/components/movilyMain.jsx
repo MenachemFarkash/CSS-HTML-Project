@@ -10,6 +10,7 @@ import Footer from './footer';
 
 class MovilyMain extends Component {
     state = {
+        idAddMovie: 87,
         movies: [
             { id: 1, name: 'The Shawshank Redemption', rating: 9.2, genre: 'Drama', like: '🖤' },
             { id: 2, name: 'The Godfather', rating: 9.2, genre: 'Crime', like: '🖤' },
@@ -190,8 +191,11 @@ class MovilyMain extends Component {
             },
         ],
         showenMovies: [],
-        pages: [{ number: 1 }, { number: 2 }, { number: 3 }],
+        pages: [],
+        newMovie: {},
         mainPageOn: true,
+        max: 0,
+        // ? Pagination=============
     };
     style = {};
     render() {
@@ -202,24 +206,36 @@ class MovilyMain extends Component {
         }
         return (
             <div style={this.style}>
-                <NavBar mainPage={this.mainPage} />
-                <SideBar showList={this.showMovies} resetShowenList={this.resetShowenList} />
-                <BrowserRouter>
-                    <Routes>
-                        <Route
-                            path="/"
-                            element={
-                                <MovieList
-                                    showenMovies={this.state.showenMovies}
-                                    handleLike={this.handleLike}
-                                    movies={this.state.movies}
-                                    handleDelete={this.handleDelete}
-                                />
-                            }
-                        />
-                        <Route path="/addMovie" element={<AddMovie />} />
-                    </Routes>
-                </BrowserRouter>
+                <NavBar mainPage={this.mainPage} pagesNumber={this.pagesNumber} />
+                <SideBar
+                    showList={this.showMovies}
+                    resetShowenList={this.resetShowenList}
+                    movies={this.state.movies}
+                />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <MovieList
+                                showenMovies={this.state.showenMovies}
+                                handleLike={this.handleLike}
+                                movies={this.state.movies}
+                                handleDelete={this.handleDelete}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/addMovie"
+                        element={
+                            <AddMovie
+                                prevent={this.prevent}
+                                handleSubmit={this.handleSubmit}
+                                movies={this.state.movies}
+                                max={this.state.max}
+                            />
+                        }
+                    />
+                </Routes>
                 <Footer pages={this.state.pages}></Footer>
             </div>
         );
@@ -326,6 +342,28 @@ class MovilyMain extends Component {
     mainPage = () => {
         this.setState({ mainPageOn: true });
     };
+    pagesNumber = (ev) => {
+        if (ev.target.value !== '' && ev.target.value !== 0) {
+            let pages = this.state.pages;
+            pages.length = 0;
+            for (let i = 1; i <= Math.ceil(this.state.showenMovies.length / ev.target.value); i++) {
+                this.state.pages.push(i);
+                this.setState({ pages: this.state.pages });
+            }
+            console.table(this.state.pages);
+        }
+        console.table(this.state.pages);
+    };
+    handleSubmit = (event, values) => {
+        event.preventDefault();
+        let newMovie = {
+            id: this.state.idAddMovie,
+            ...values,
+            like: '🖤',
+        };
+        this.state.movies.push(newMovie);
+        this.setState({ movies: this.state.movies });
+        this.state.idAddMovie++;
+    };
 }
-
 export default MovilyMain;
