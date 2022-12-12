@@ -23,7 +23,7 @@
 
     top: 11vh;
     left: 16vw;
-    background-color: #e37286dc;
+    background-color: #242423;
     border-radius: 7px;
 }
 #movieList {
@@ -36,7 +36,7 @@
     height: fit-content;
 }
 #tableHead {
-    background-color: #881b2fdc;
+    background-color: #333533;
     padding: 1%;
     margin-top: 10px;
     height: 6vh;
@@ -47,7 +47,8 @@
 }
 #movieCellOdd {
     height: 13vh;
-    background-color: #da445fdc;
+    background-color: #242423;
+    color: #f5cb5c;
     border-radius: 7px;
     font-size: 3vh;
 }
@@ -64,7 +65,7 @@
     height: 78vh;
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: rgb(227, 172, 227) rgb(149, 134, 134);
+    scrollbar-color: #f5cb5c #333533;
     box-shadow: 0px 0px 15px 7px firebrick;
 }
 
@@ -77,7 +78,7 @@
     position: fixed;
     width: 13.5vw;
     height: 82vh;
-    background-color: #9d6381;
+    background-color: #333533;
     top: 10vh;
     padding: 1.5vh;
     overflow-y: auto;
@@ -95,13 +96,14 @@
     font-size: 3vh;
     border-radius: 4px;
     cursor: pointer;
+    background-color: #f5cb5c;
 }
 
 #innerButton {
     position: absolute;
     top: -10px;
     right: -10px;
-    background-color: rgb(25, 121, 121);
+    background-color: rgb(130, 130, 0);
     color: rgb(0, 0, 0);
     font-size: 0.7em;
     padding: 2px 5px;
@@ -115,11 +117,12 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    background-color: #612940;
+    background-color: #242423;
     height: 10vh;
     width: 100%;
     padding-right: 20px;
     top: 0;
+    color: #f5cb5c;
 }
 #heading {
     margin-left: 45px;
@@ -155,21 +158,21 @@
     font-size: 35px;
 }
 #addMovieMainButton {
-    width: 8vw;
-    height: 3vh;
+    width: 11vw;
     margin-top: 2.5vh;
+    background-color: #f5cb5c;
 }
 #addMovieLink {
     text-decoration: none;
-    color: black;
-    font-size: large;
+    color: #242423;
+    font-size: 1.7vw;
     padding: 1vh;
 }
 
 /* ! =====================Add Movie CSS=========================== */
 
 #formContainer {
-    background-color: rgb(0, 0, 0);
+    background-color: #242423;
     position: fixed;
     top: 15vh;
     left: 25vw;
@@ -195,6 +198,8 @@
 
 #movieNameInput {
     color: rgb(0, 0, 0);
+    background-color: #c8b671;
+    border: none;
     width: 30vw;
     height: 5vh;
     font-size: 2vw;
@@ -202,10 +207,13 @@
 }
 
 #formHeading {
-    color: white;
+    margin-top: 5vh;
+    color: #f5cb5c;
     font-size: 3vw;
 }
 #chooseGenreHeading {
+    margin-top: 5vh;
+
     color: white;
     font-size: 2vw;
 }
@@ -213,6 +221,8 @@
     width: 25vw;
     font-size: larger;
     text-align: center;
+    background-color: #c8b671;
+    border: none;
 }
 #ratingInput {
     width: 3vw;
@@ -221,27 +231,31 @@
     text-align: center;
     font-size: 2.5vh;
     margin-left: 2vw;
+    background-color: #c8b671;
+    border: none;
 }
 #ratingInputLabel {
-    color: white;
+    color: #f5cb5c;
     margin-top: 2vh;
-    font-size: 1.5vw;
+    font-size: 3vw;
 }
 #addMovieButton {
     position: fixed;
     top: 80vh;
     margin-top: 2vh;
     width: 10vw;
-    height: 2.5vw;
     font-size: 2.5vh;
 }
 #exitButton {
     position: fixed;
     top: 16vh;
     right: 26vw;
-    width: 2vw;
-    height: 2vw;
     font-size: x-large;
+    background-color: transparent;
+    border: none;
+}
+#exitLink {
+    text-decoration: none;
     color: #871111;
 }
 
@@ -267,7 +281,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #612940;
+    background-color: #242423;
     position: fixed;
     width: 100vw;
     height: 7vh;

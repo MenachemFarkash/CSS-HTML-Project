@@ -6,8 +6,8 @@ class Footer extends Component {
         display: 'inline',
     };
     render() {
+        console.log(this.props.moviesPerPage);
         let items = [];
-        console.log(Math.ceil(this.props.movies.length / this.props.moviesPerPage));
         for (
             let number = 1;
             number <= Math.ceil(this.props.movies.length / this.props.moviesPerPage);

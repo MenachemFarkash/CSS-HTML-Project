@@ -585,18 +585,6 @@ class MovilyMain extends Component {
         }
     };
 
-    // pagesNumber = (ev) => {
-    //     if (ev.key == 'Enter') {
-    //         if (ev.target.value !== '' && ev.target.value !== 0) {
-    //             let pages = this.state.pages;
-    //             pages.length = 0;
-    //             for (let i = 1; i <= Math.ceil(this.state.showenMovies.length / ev.target.value); i++) {
-    //                 this.state.pages.push(i);
-    //                 this.setState({ pages: this.state.pages });
-    //             }
-    //         }
-    //     }
-    // };
     handleSubmit = (event, values) => {
         event.preventDefault();
         let newMovie = {

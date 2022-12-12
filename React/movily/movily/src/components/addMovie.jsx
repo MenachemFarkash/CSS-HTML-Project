@@ -18,7 +18,9 @@ const AddMovie = (props) => {
             <div id="formContainer">
                 <form onSubmit={(ev) => props.handleSubmit(ev, formik.values)} action="/" id="addMovieForm">
                     <button id="exitButton" type="button">
-                        <Link to="/">X</Link>
+                        <Link id="exitLink" to="/">
+                            ❌
+                        </Link>
                     </button>
                     <h1 id="formHeading">Add Movie</h1>
                     <div>

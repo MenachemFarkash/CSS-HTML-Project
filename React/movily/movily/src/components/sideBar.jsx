@@ -4,9 +4,6 @@ class SideBar extends Component {
     render() {
         return (
             <div id="siderMain">
-                <span>
-                    <button>{'>'}</button>
-                </span>
                 <div id="buttonContainer">
                     <button id="sideButton" onClick={() => this.props.showList('Action')}>
                         Action<span id="innerButton">{this.props.buttonBadges[0]}</span>
