@@ -20,9 +20,9 @@ class NavBar extends Component {
                     <div id="center">
                         <label id="label">Number Of Items: </label>
                         <input
-                            onChange={(ev) => this.props.pagesNumber(ev)}
+                            onKeyPress={(ev) => this.props.setMoviesPerPage(ev)}
                             id="input"
-                            type={'text'}
+                            type="text"
                             placeholder={'1'}
                         ></input>
                     </div>

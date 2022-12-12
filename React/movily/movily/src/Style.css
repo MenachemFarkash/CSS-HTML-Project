@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 #scroll {
-    height: 81vh;
+    height: 78vh;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: rgb(227, 172, 227) rgb(149, 134, 134);
@@ -261,4 +261,15 @@
 #pageButtons {
     width: 2vw;
     height: 2vh;
+}
+
+#paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #612940;
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    top: 93vh;
 }

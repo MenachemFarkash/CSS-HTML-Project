@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import NavBar from './components/navBar';
 import MovilyMain from './components/movilyMain';
 import { BrowserRouter } from 'react-router-dom';
+<script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
