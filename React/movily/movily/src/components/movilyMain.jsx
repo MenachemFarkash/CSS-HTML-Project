@@ -579,7 +579,6 @@ class MovilyMain extends Component {
         this.setState({ mainPageOn: true });
     };
     setMoviesPerPage = (ev) => {
-        console.log('hi');
         if (ev.key == 'Enter' && ev.target.value > 0) {
             this.setState({ moviesPerPage: ev.target.value });
         }
@@ -624,7 +623,6 @@ class MovilyMain extends Component {
     };
     updateCurrentPage = (number) => {
         this.setState({ currentPage: number });
-        console.log(this.state.currentPage);
     };
 }
 export default MovilyMain;

@@ -6,7 +6,6 @@ class Footer extends Component {
         display: 'inline',
     };
     render() {
-        console.log(this.props.moviesPerPage);
         let items = [];
         for (
             let number = 1;

@@ -4,14 +4,12 @@ import '../Style.css';
 class MovieList extends Component {
     render() {
         let moviesToShow = [...this.props.showenMovies];
-        console.log(moviesToShow);
 
         const pages = this.props.moviesPerPage;
         moviesToShow = moviesToShow.slice(
             pages * (this.props.currentPage - 1),
             pages * this.props.currentPage
         );
-        console.log(moviesToShow);
 
         return (
             <div id="main">

@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(210, 64, 64);
+    transition: background-color 1.5s;
+    height: 100vh;
+    margin: 0;
+}
+
+#logo {
+}
+#topContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+#bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 72vh;
+    width: 100vw;
+    height: 20vh;
+}
+#emailLink {
+    font-size: 20px;
+    margin-top: 0px;
+}
+#issuesContainer {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: space-evenly;
+    height: 20vh;
+    padding-right: 1vw;
+    padding-top: 8vh;
+}
+#infoContainer {
+    width: 17vw;
+    padding-left: 1vw;
+    font-size: 14px;
+    padding-top: 3vh;
+}
+#privacyPolicy {
+    color: black;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: 600;
+}
+#issueButton {
+    font-size: 18px;
+    background: transparent;
+    border: none;
+}
+#issueButton:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#mainContainer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#issue1,
+#issue2 {
+    position: fixed;
+    width: 420px;
+    height: 532px;
+}
+
+#issue1Container {
+    position: fixed;
+    width: 420px;
+    height: 532px;
+    top: 20;
+    transition: top 1s;
+}
+#issue2Container {
+    position: fixed;
+    width: 420px;
+    height: 532px;
+    top: 100;
+    transition: top 1s;
+}
